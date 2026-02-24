@@ -173,30 +173,76 @@ export default function Dashboard() {
               <div key={b.id} className="bg-white border border-slate-100 rounded-[2rem] overflow-hidden flex flex-col md:flex-row h-full md:h-64">
                 <div className="flex-1 p-8 flex flex-col justify-between">
                   <div>
-                    <div className="flex items-center gap-2 mb-2">
-                      <span className="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-black uppercase tracking-tighter rounded-full">
-                        {b.type}
-                      </span>
-                    </div>
-                    <h3 className="text-2xl font-medium text-slate-900">{b.placeName}</h3>
-                    <div className="flex items-center gap-4 mt-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
-                       <span className="flex items-center gap-1.5"><Calendar size={12} /> {b.date}</span>
-                       <span className="text-slate-900">₹{b.total}</span>
-                    </div>
+                    
+<div>
+  
+  {/* Hotel / Provider */}
+  <h3 className="text-2xl font-medium text-slate-900">
+    {b.provider || "Hotel"}
+  </h3>
+
+  {/* Place */}
+  <p className="text-slate-500 text-sm mt-1">
+    {b.placeName || "Location"}
+  </p>
+
+  {/* Date + Price */}
+  <div className="flex items-center gap-4 mt-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
+    <span className="flex items-center gap-1.5">
+      <Calendar size={12} /> {b.date || "N/A"}
+    </span>
+
+    <span className="text-slate-900 text-sm font-semibold">
+      ₹{b.total || 0}
+    </span>
+  </div>
+</div>                   
+{b.people && (
+  <p className="text-xs text-slate-500 mt-1">
+    👥 {b.people} people
+  </p>
+)}
+<span className="px-3 py-1 bg-blue-50 text-blue-600 text-[10px] font-black uppercase rounded-full">
+  {b.type}
+</span>
+{b.activityDate && (
+  <p className="text-xs text-slate-500">
+    📅 {b.activityDate}
+  </p>
+)}
+
+{b.timeSlot && (
+  <p className="text-xs text-slate-500">
+    ⏰ {b.timeSlot}
+  </p>
+)}
                   </div>
-                  <button className="flex items-center gap-2 text-xs font-black text-blue-600 uppercase tracking-widest mt-6 group">
-                    View Receipt <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                  </button>
+                 <button
+  onClick={() => router.push(`/payment-success?id=${b.id}`)}
+  className="flex items-center gap-2 text-xs font-black text-blue-600 uppercase tracking-widest mt-6 group"
+>
+  View Receipt
+  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+</button>
                 </div>
                 
-                {b.location && (
-                  <div className="w-full md:w-[40%] h-48 md:h-full bg-slate-100 border-l border-slate-50">
-                    <PlacesMap 
-                      places={[{ name: b.placeName, lat: b.location.lat, lng: b.location.lng }]} 
-                      selectedPlace={null}
-                    />
-                  </div>
-                )}
+                {b.location &&
+  typeof b.location.lat === "number" &&
+  typeof b.location.lng === "number" &&
+  !isNaN(b.location.lat) &&
+  !isNaN(b.location.lng) && (
+    <div className="w-full md:w-[40%] h-48 md:h-full bg-slate-100 border-l border-slate-50">
+      <PlacesMap
+        places={[
+          {
+            name: b.placeName,
+            lat: b.location.lat,
+            lng: b.location.lng,
+          },
+        ]}
+      />
+    </div>
+)}
               </div>
             ))
           )}

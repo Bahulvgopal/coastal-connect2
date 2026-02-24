@@ -5,6 +5,7 @@ import { placesData } from "@/app/data/places";
 import Navbar from "@/app/components/Navbar";
 import WeatherCard from "@/app/components/WeatherCard";
 import dynamic from "next/dynamic"; // For SSR fix
+import GuideFloating from "@/app/components/GuideFloating";
 
 import {
   MapPin,
@@ -58,9 +59,19 @@ export default function PlacePage() {
 
   const images = place.images?.length > 0 ? place.images : ["/placeholder.jpg"];
 
-  const book = (type: string) => {
-    router.push(`/booking?place=${place.name}&type=${type}&lat=${place.lat}&lng=${place.lng}`);
-  };
+ const book = (type: string) => {
+  if (type === "homestay") {
+    // Existing booking page
+    router.push(
+      `/booking?place=${place.name}&type=homestay&lat=${place.lat}&lng=${place.lng}`
+    );
+  } else {
+    // New activity flow page
+    router.push(
+      `/activities?place=${place.name}&lat=${place.lat}&lng=${place.lng}`
+    );
+  }
+};
 
   return (
     <>
@@ -430,11 +441,27 @@ export default function PlacePage() {
 
               {/* Info cards */}
               <div className="card">
-                <InfoCard icon={<History size={15} />} title="History" text="Rich cultural heritage spanning centuries of coastal tradition." />
-                <InfoCard icon={<Utensils size={15} />} title="Cuisine" text="Authentic Kerala flavours — seafood, coconut curries & more." />
-                <InfoCard icon={<Camera size={15} />} title="Activities" text="Photography, backwater cruises & cultural exploration." />
-              </div>
+  <InfoCard
+    icon={<History size={15} />}
+    title="History"
+    text="Rich cultural heritage spanning centuries of coastal tradition."
+    link="/archive"
+  />
 
+  <InfoCard
+    icon={<Utensils size={15} />}
+    title="Cuisine"
+    text="Authentic Kerala flavours — seafood, coconut curries & more."
+    link="/cuisine"
+  />
+
+  <InfoCard
+    icon={<Camera size={15} />}
+    title="Activities"
+    text="Photography, backwater cruises & cultural exploration."
+    link="/activities"
+  />
+</div>
             </aside>
           </div>
         </main>
@@ -447,13 +474,19 @@ export default function PlacePage() {
           </button>
         </div>
       </div>
+      <GuideFloating place={place} />
     </>
   );
 }
 
-function InfoCard({ icon, title, text }: any) {
+function InfoCard({ icon, title, text, link }: any) {
+  const router = useRouter();
+
   return (
-    <div className="info-card">
+    <div
+      className="info-card cursor-pointer"
+      onClick={() => link && router.push(link)}
+    >
       <div className="info-icon">{icon}</div>
       <div>
         <div className="info-title">{title}</div>
