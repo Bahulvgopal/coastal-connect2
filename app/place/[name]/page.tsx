@@ -468,10 +468,7 @@ export default function PlacePage() {
 
         {/* Mobile sticky bar */}
         <div className="mobile-bar">
-          <span className="bar-name">{place.name}</span>
-          <button className="bar-btn" onClick={() => book("homestay")}>
-            Book Now
-          </button>
+          
         </div>
       </div>
       <GuideFloating place={place} />
