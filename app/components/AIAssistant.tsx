@@ -132,7 +132,7 @@ export default function AIAssistant() {
           .ai-panel {
             inset: auto;
             bottom: 5.5rem; right: 2rem;
-            width: 400px; height: 550px;
+            width: 400px; height: 500px;
             border-radius: 2rem;
             box-shadow:
               0 2px 8px rgba(15,23,42,0.06),
