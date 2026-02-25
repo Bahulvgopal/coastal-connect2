@@ -40,7 +40,7 @@ export default function Login() {
       <div className="flex-1 flex items-center justify-center p-4">
         <div className="bg-white w-full max-w-md rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
           {/* Top Branding Section */}
-          <div className="bg-blue-600 p-8 text-center text-white">
+          <div className="bg-[#0ea5e9] p-8 text-center text-white">
             <h1 className="text-3xl font-bold tracking-tight">Welcome Back</h1>
             <p className="text-blue-100 mt-2">Log in to access your saved trips</p>
           </div>
@@ -56,7 +56,7 @@ export default function Login() {
 
             {/* Email Field */}
             <div className="space-y-1">
-              <label className="text-sm font-semibold text-gray-700 ml-1">Email Address</label>
+              <label className="text-sm font-semibold text-black ml-1">Email Address</label>
               <div className="relative">
                 <Mail className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                 <input
@@ -72,7 +72,7 @@ export default function Login() {
 
             {/* Password Field */}
             <div className="space-y-1">
-              <label className="text-sm font-semibold text-gray-700 ml-1">Password</label>
+              <label className="text-sm font-semibold text-black ml-1">Password</label>
               <div className="relative">
                 <Lock className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={18} />
                 <input
@@ -85,7 +85,7 @@ export default function Login() {
                 />
               </div>
               <div className="text-right">
-                <button type="button" className="text-xs font-semibold text-blue-600 hover:underline">
+                <button type="button" className="text-xs font-semibold text-[#0ea5e9] hover:underline">
                   Forgot Password?
                 </button>
               </div>
@@ -95,7 +95,7 @@ export default function Login() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-blue-100 flex items-center justify-center gap-2 disabled:opacity-70 active:scale-[0.98]"
+              className="w-full bg-[#0ea5e9] hover:bg-blue-700 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-blue-100 flex items-center justify-center gap-2 disabled:opacity-70 active:scale-[0.98]"
             >
               {loading ? (
                 <Loader2 className="animate-spin" size={20} />
@@ -110,7 +110,7 @@ export default function Login() {
             {/* Footer */}
             <p className="text-center text-sm text-gray-500">
               Don't have an account?{" "}
-              <Link href="/signup" className="text-blue-600 font-bold hover:underline">
+              <Link href="/signup" className="text-[#0ea5e9] font-bold hover:underline">
                 Sign Up
               </Link>
             </p>

@@ -75,6 +75,7 @@ export default function AIAssistant() {
           z-index: 100;
           transition: all 0.35s cubic-bezier(0.34,1.56,0.64,1);
           box-shadow: 0 8px 28px rgba(59,130,246,0.35);
+          
         }
         .ai-fab-open {
           background: #1e293b;
@@ -114,6 +115,7 @@ export default function AIAssistant() {
           flex-direction: column;
           overflow: hidden;
           background: #ffffff;
+          
 
           /* Mobile: full screen */
           inset: 0;
@@ -130,7 +132,7 @@ export default function AIAssistant() {
           .ai-panel {
             inset: auto;
             bottom: 5.5rem; right: 2rem;
-            width: 400px; height: 600px;
+            width: 400px; height: 550px;
             border-radius: 2rem;
             box-shadow:
               0 2px 8px rgba(15,23,42,0.06),
@@ -388,7 +390,7 @@ export default function AIAssistant() {
         <div className="ai-panel">
 
           {/* Header */}
-          <div className="ai-header">
+          <div className="ai-header ">
             <div className="ai-header-left">
               <div className="ai-avatar">
                 <Compass size={22} className="ai-compass" />
@@ -401,9 +403,7 @@ export default function AIAssistant() {
                 </div>
               </div>
             </div>
-            <button className="ai-close" onClick={() => setOpen(false)} aria-label="Close">
-              <X size={16} />
-            </button>
+           
           </div>
 
           {/* Messages */}

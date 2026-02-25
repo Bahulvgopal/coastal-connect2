@@ -50,7 +50,7 @@ export default function Signup() {
       <div className="flex-1 flex items-center justify-center p-4">
         <div className="bg-white w-full max-w-md rounded-3xl shadow-xl border border-gray-100 overflow-hidden">
           {/* Header Branding */}
-          <div className="bg-indigo-600 p-8 text-center text-white">
+          <div className="bg-[#0ea5e9] p-8 text-center text-white">
             <h1 className="text-3xl font-bold tracking-tight">Create Account</h1>
             <p className="text-indigo-100 mt-2">Join Coastal Connect and start planning</p>
           </div>
@@ -73,7 +73,7 @@ export default function Signup() {
                   placeholder="traveler@example.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all"
+                  className="w-full pl-10 pr-4 py-3 text-black bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all"
                   required
                 />
               </div>
@@ -89,7 +89,7 @@ export default function Signup() {
                   placeholder="Min. 6 characters"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all"
+                  className="w-full pl-10 pr-4 py-3 text-black bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all"
                   required
                 />
               </div>
@@ -105,7 +105,7 @@ export default function Signup() {
                   placeholder="Repeat your password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all"
+                  className="w-full pl-10 text-black pr-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:bg-white outline-none transition-all"
                   required
                 />
               </div>
@@ -115,7 +115,7 @@ export default function Signup() {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-indigo-100 flex items-center justify-center gap-2 disabled:opacity-70"
+              className="w-full bg-[#0ea5e9] hover:bg-indigo-700 text-white font-bold py-4 rounded-2xl transition-all shadow-lg shadow-indigo-100 flex items-center justify-center gap-2 disabled:opacity-70"
             >
               {loading ? (
                 <Loader2 className="animate-spin" size={20} />
@@ -129,7 +129,7 @@ export default function Signup() {
 
             <p className="text-center text-sm text-gray-500">
               Already have an account?{" "}
-              <Link href="/login" className="text-indigo-600 font-bold hover:underline">
+              <Link href="/login" className="text-[#0ea5e9] font-bold hover:underline">
                 Login
               </Link>
             </p>

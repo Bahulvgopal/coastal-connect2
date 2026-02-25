@@ -24,7 +24,7 @@ export const providers = {
         "Boating Access",
         "BBQ Night",
       ],
-      thumb: "/providers/adimalithura.jpg" // Points to public/providers/h1.jpg
+      thumb: "/providers/sea.avif" // Points to public/providers/h1.jpg
     },
     {
       id: "h2",
@@ -50,7 +50,7 @@ export const providers = {
         "Boating Access",
         "BBQ Night",
       ],
-      thumb: "/providers/h2.jpg"
+      thumb: "/providers/villa.jpg"
     },
     {
       id: "h3",
@@ -76,7 +76,7 @@ export const providers = {
         "Boating Access",
         "BBQ Night",
       ],
-      thumb: "/providers/h3.jpg"
+      thumb: "/providers/home.jpg"
     },
     {
       id: "h4",
@@ -102,7 +102,7 @@ export const providers = {
         "Boating Access",
         "BBQ Night",
       ],
-      thumb: "/providers/h4.jpg"
+      thumb: "/providers/suite.jpg"
     },
     {
       id: "h5",
@@ -128,7 +128,7 @@ export const providers = {
         "Boating Access",
         "BBQ Night",
       ],
-      thumb: "/providers/h5.jpg"
+      thumb: "/providers/stay.jpg"
     },
     {
       id: "h6",
@@ -154,7 +154,7 @@ export const providers = {
         "Boating Access",
         "BBQ Night",
       ],
-      thumb: "/providers/h6.jpg"
+      thumb: "/providers/loft.jpg"
     },
   ],
 
@@ -166,7 +166,7 @@ export const providers = {
       rating: 4.7,
       location: "Veli Lake",
       earnings: 650,
-      thumb: "/providers/adimalithura.jpg"
+      thumb: "/providers/a1.jpg"
     },
     {
       id: "a2",

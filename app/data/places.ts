@@ -121,8 +121,8 @@ export const placesData: Record<string, any[]> = {
       lng: 76.9435,
       description: "An architectural marvel in Dravidian style, renowned as one of the wealthiest religious institutions in the world.",
       images: [
-        "/places/padmanabha1.jpg",
-        "/places/padmanabha2.jpg",
+        "/places/temple.jpg",
+        "/places/temple1.jpg",
       ],
     },
     {

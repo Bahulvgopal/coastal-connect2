@@ -85,7 +85,7 @@ export default function GuideBookingPage() {
                     min={1}
                     value={people}
                     onChange={(e) => setPeople(Number(e.target.value))}
-                    className="w-full bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
+                    className="w-full text-black bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
                   />
                 </div>
 
@@ -98,7 +98,7 @@ export default function GuideBookingPage() {
                     type="date"
                     value={date}
                     onChange={(e) => setDate(e.target.value)}
-                    className="w-full bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
+                    className="w-full text-black bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
                   />
                 </div>
 
@@ -111,7 +111,7 @@ export default function GuideBookingPage() {
                     type="time"
                     value={time}
                     onChange={(e) => setTime(e.target.value)}
-                    className="w-full bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
+                    className="w-full text-black bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
                   />
                 </div>
               </div>
@@ -125,7 +125,7 @@ export default function GuideBookingPage() {
                   placeholder="Tell your guide about interests, language preferences, or health needs..."
                   value={notes}
                   onChange={(e) => setNotes(e.target.value)}
-                  className="w-full bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all min-h-[120px]"
+                  className="w-full text-black bg-slate-50 border-none p-4 rounded-2xl focus:ring-2 focus:ring-blue-500 transition-all min-h-[120px]"
                 />
               </div>
             </section>
