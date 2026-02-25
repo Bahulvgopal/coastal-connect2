@@ -38,7 +38,7 @@ export const foodData = [
   {
     id: 5,
     name: "Parotta & Beef Curry",
-    image: "/foods/pb.jpg",
+    image: "/foods/pb.webp",
     hotel: "All Restaurants",
     bestTime: "Breakfast / Dinner",
     description:
