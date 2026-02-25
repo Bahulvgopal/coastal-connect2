@@ -18,7 +18,7 @@ export default function Archive() {
     {
       title: "Kathakali Artform",
       category: "Art Forms",
-      image: "https://www.istockphoto.com/photos/kathakali-masks",
+      image: "/providers/a1.jpg",
       description: "A blend of dance, music and ritual, one of the oldest theater traditions."
     },
     {
