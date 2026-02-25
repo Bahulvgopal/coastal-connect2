@@ -18,7 +18,7 @@ export default function Archive() {
     {
       title: "Kathakali Artform",
       category: "Art Forms",
-      image: "/providers/a1.jpg",
+      image: "/places/kathakali.jpeg",
       description: "A blend of dance, music and ritual, one of the oldest theater traditions."
     },
     {
