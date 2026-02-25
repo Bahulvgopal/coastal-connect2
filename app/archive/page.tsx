@@ -30,7 +30,7 @@ export default function Archive() {
     {
       title: "Muziris Heritage",
       category: "History",
-      image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?q=80&w=1000",
+      image: "places/bekalfort.jpg",
       description: "Exploring the ancient spice route and the lost port of the Roman era."
     }
   ];
