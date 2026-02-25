@@ -24,13 +24,13 @@ export default function Archive() {
     {
       title: "Bekal Fort",
       category: "Landmarks",
-      image: "https://images.unsplash.com/photo-1595113316349-9fa4ee24f884?q=80&w=1000",
+      image: "places/bekalfort.jpg",
       description: "The largest fortress in Kerala, built in the 17th century by Shivappa Nayaka."
     },
     {
       title: "Muziris Heritage",
       category: "History",
-      image: "places/bekalfort.jpg",
+      image: "places/muz.jpg",
       description: "Exploring the ancient spice route and the lost port of the Roman era."
     }
   ];
