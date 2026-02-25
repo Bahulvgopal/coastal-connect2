@@ -29,7 +29,7 @@ export default function Archive() {
     },
      {
       title: "Kalari Payattu",
-      category: "martial Forms",
+      category: "Art Forms",
       image: "places/kp.jpg",
       description: "3000 years martial Art form in Kerala,considered one of the world,s oldest acrobatic and weapon based combat ."
     },
