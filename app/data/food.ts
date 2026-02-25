@@ -35,4 +35,31 @@ export const foodData = [
     description:
       "Fragrant rice cooked with spices, meat, and fried onions — a Malabar specialty.",
   },
+  {
+    id: 5,
+    name: "Parotta & Beef Curry",
+    image: "/foods/pb.jpg",
+    hotel: "All Restaurants",
+    bestTime: "Breakfast / Dinner",
+    description:
+      "Bread made with flour and beef curry made in kerala style.",
+  },
+  {
+    id: 6,
+    name: "palpayasam and boli",
+    image: "/foods/pab.jpg",
+    hotel: "Kozhikode Restaurants",
+    bestTime: "Noon",
+    description:
+      "A harmonious pairing in Kerala cusine,are beloved treats made from refined flour,jaggery,milk,rice and sugar.",
+  },
+  {
+    id: 7,
+    name: "Toddy",
+    image: "/foods/td.jpg",
+    hotel: "Toody Shops",
+    bestTime: "Evening",
+    description:
+      "Toddy is mildly alcoholic beverage produced by fermenting the sweet sap of coconut or palm flowers.",
+  },
 ];
