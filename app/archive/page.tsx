@@ -27,6 +27,24 @@ export default function Archive() {
       image: "places/bekalfort.jpg",
       description: "The largest fortress in Kerala, built in the 17th century by Shivappa Nayaka."
     },
+     {
+      title: "Kalari Payattu",
+      category: "martial Forms",
+      image: "places/kp.jpg",
+      description: "3000 years martial Art form in Kerala,considered one of the world,s oldest acrobatic and weapon based combat ."
+    },
+      {
+      title: "Sree padmanabhaswamy temple",
+      category: "History",
+      image: "places/temple.jpg",
+      description: "Worlds Richest temple, Workshipping Lord Vishnu."
+    },
+      {
+      title: "Theyyam Ritual",
+      category: "Art Forms",
+      image: "places/theyyam.jpg",
+      description: "An ancient 1,500 years old ritualistic-performance art from North Kerala ."
+    },
     {
       title: "Muziris Heritage",
       category: "History",
