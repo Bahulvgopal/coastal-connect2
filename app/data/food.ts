@@ -4,7 +4,7 @@ export const foodData = [
     name: "Appam & Stew",
     image: "/foods/appam.jpg",
     hotel: "Local Homestays & Toddy Shops",
-    bestTime: "Breakfast (7 AM – 10 AM)",
+    bestTime: "Breakfast (07:00 AM – 10:00 AM)",
     description:
       "Soft fermented rice pancakes served with coconut milk based vegetable or chicken stew.",
   },
